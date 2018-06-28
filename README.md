@@ -16,3 +16,6 @@ framework used :
 2. AVKit
 3. AVFoundation
 4. Foundation
+
+Objective-C version:
+https://www.youtube.com/watch?v=QqYqwqLylM4
