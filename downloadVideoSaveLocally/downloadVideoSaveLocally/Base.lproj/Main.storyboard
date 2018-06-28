@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="downloadVideoSaveLocally" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Py4-AI-N8c">
+                                <rect key="frame" x="0.0" y="102" width="375" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="sYE-s2-pgA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5u-Td-cUD">
+                                <rect key="frame" x="117" y="284" width="143" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="uJp-Tu-j1z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Play Video"/>
+                                <connections>
+                                    <action selector="playVideoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kDy-jW-Ggs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EvB-ls-d1q">
+                                <rect key="frame" x="112" y="187" width="151" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Start download"/>
+                                <connections>
+                                    <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RgH-YX-ABG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="a5u-Td-cUD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="117" id="A9Q-x5-SCw"/>
+                            <constraint firstItem="EvB-ls-d1q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="E2E-da-TOj"/>
+                            <constraint firstItem="Py4-AI-N8c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NyP-aK-Oy7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EvB-ls-d1q" secondAttribute="trailing" id="UsL-Bj-aHM"/>
+                            <constraint firstItem="Py4-AI-N8c" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="82" id="adi-Ko-a4q"/>
+                            <constraint firstItem="a5u-Td-cUD" firstAttribute="top" secondItem="EvB-ls-d1q" secondAttribute="bottom" constant="40" id="cX6-WT-lCT"/>
+                            <constraint firstItem="Py4-AI-N8c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d85-XZ-zIy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Py4-AI-N8c" secondAttribute="trailing" id="gFz-jX-OsK"/>
+                            <constraint firstItem="EvB-ls-d1q" firstAttribute="top" secondItem="Py4-AI-N8c" secondAttribute="bottom" constant="64" id="jEJ-60-VVB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="a5u-Td-cUD" secondAttribute="trailing" constant="115" id="vdw-dx-NRy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="statusLabel" destination="Py4-AI-N8c" id="ByX-Xu-UGt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
