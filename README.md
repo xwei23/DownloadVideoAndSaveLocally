@@ -11,7 +11,7 @@ Features included:
 5. move file to target url address
 6. tap play video to play the music we just downloaded
 
-framwork used :
+framework used :
 1. UIKit
 2. AVKit
 3. AVFoundation
